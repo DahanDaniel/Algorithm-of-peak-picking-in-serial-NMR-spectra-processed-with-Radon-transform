@@ -14,10 +14,10 @@ dt = 1 # timestep
 t = np.arange(0.,N,dt) # time domain
 t=t/N
 n = len(t)
-A = np.array([2,3,5]) # amplitudes
-w = np.array([120.,230.,350.]) # frequencies
-B = np.array([.5,.8,.7]) # damping coeffs
-dw = np.array([0.,1.,-1/2]) # changes in frequencies
+A = np.array([2,2.1,0]) # amplitudes
+w = np.array([120.,130.,0]) # frequencies
+B = np.array([.5,.6,0]) # damping coeffs
+dw = np.array([0.5,0.5,0]) # changes in frequencies
 
 #Create matrix of function(series)
 f = np.zeros((len(S),n),dtype="complex_")
@@ -168,8 +168,8 @@ def subtractpeak(f, w, dw, B, A):
     print("Peak subtracted at:" + "\n" + "w = {:.2f}, dw = {:.2f}, B = {:.2f}, A = {:.2f}".format(w, dw, B, A))
     return fnext
 
-dwmin = -2
-dwmax = 2
+dwmin = -4
+dwmax = 4
 ddw = .01
 #array for peaks found
 Peaks = np.empty((0,4), dtype=float)
@@ -188,10 +188,10 @@ def dothething(f,dwmin,dwmax,ddw, Peaks):
     return fnext, Peaks
 
 fnext1, Peaks = dothething(f,dwmin,dwmax,ddw, Peaks)
-fnext2, Peaks = dothething(fnext1,dwmin,dwmax,ddw, Peaks)
-fnext3, Peaks = dothething(fnext2,dwmin,dwmax,ddw, Peaks)
+# fnext2, Peaks = dothething(fnext1,dwmin,dwmax,ddw, Peaks)
+# fnext3, Peaks = dothething(fnext2,dwmin,dwmax,ddw, Peaks)
 
-PR4, cords4, w4, dw4, phat4 = Radon(fnext3,dwmin,dwmax,ddw)
+# PR4, cords4, w4, dw4, phat4 = Radon(fnext3,dwmin,dwmax,ddw)
 
 print("Summary: ")
 print(*np.round(np.real(Peaks),3), sep='\n')
