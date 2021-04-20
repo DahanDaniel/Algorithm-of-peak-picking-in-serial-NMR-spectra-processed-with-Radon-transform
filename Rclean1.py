@@ -8,17 +8,23 @@ from sys import exit
 import time
 start = time.time()
 
-#Generate test input#
-s = 32 # number of series
+# Parameters
+iterations = 1
+b1, b2 = 0, 1
+dwmin, dwmax, ddw = 0, 3, .01 # Domain of rates of change
+Peaks = np.empty((0,4), dtype=float) #array for peaks found
+
+# Generate test input
+s = 20 # number of series
 # S = list(range(32)) 
-N = 512
+N = 256
 dt = 1 # timestep
 t = np.arange(0.,N,dt) # time domain
 t=t/N
 n = len(t)
-A = np.array([2,2.1,0]) # amplitudes
-w = np.array([100.,120.,0]) # frequencies
-B = np.array([5,6,0]) # damping coeffs
+A = np.array([2,2,0]) # amplitudes
+w = np.array([100.,110.,0]) # frequencies
+B = np.array([2,2.5,0]) # damping coeffs
 dw = np.array([1.5,1.6,0]) # changes in frequencies
 
 #Create matrix of function(series)
@@ -62,10 +68,6 @@ plt.title('Full spectrum')
 ax.legend()
 ax.invert_xaxis()
 
-
-iterations = 2
-b1, b2 = 0, 1
-
 #Functions to fit later
 def Lorentz(x, A, V, B):
     
@@ -79,8 +81,8 @@ def Lorentzcost(x0, dictionary):
     cost = dictionary['cut'] - Lorentz(dictionary['X'], dictionary['RA'], dictionary['V'], x0[0])
     # cost = dictionary['cut'] - Lorentz(dictionary['X'], x0[0], x0[1], x0[2])
     norm = np.linalg.norm(cost)
-    if np.any(cost<0):
-        multiplycost *= (1+4*(np.sum(np.where(cost[cost<0]))*np.shape(cost[cost<0])[0])**2/norm)**2
+    # if np.any(cost<0):
+    #     multiplycost *= (1+4*(np.sum(np.where(cost[cost<0]))*np.shape(cost[cost<0])[0])**2/norm)**2
     return norm*multiplycost
 
 def helper(V, A):
@@ -143,6 +145,10 @@ def Radon(f, dwmin, dwmax, ddw):
     # result = np.where(PR == np.amax(PR)) # coordinates of global maxima
     cords1, cords2 = result[0][0], result[1][0]
     dw1, w1 = DW[cords1], freq[cords2] # frequency and rate of change of highest peak
+    
+    plt.figure()
+    plt.plot(DW,phat.real[:,cords2])
+        
     
     return PR, cords1, cords2, w1, dw1, phat
 
@@ -229,13 +235,6 @@ def dothething(f,dwmin,dwmax,ddw, Peaks):
     return fnext, Peaks
 
 # Main()
-
-dwmin = -4
-dwmax = 4
-ddw = .01
-
-#array for peaks found
-Peaks = np.empty((0,4), dtype=float)
 
 d = {}
 d["Data0"] = Data
