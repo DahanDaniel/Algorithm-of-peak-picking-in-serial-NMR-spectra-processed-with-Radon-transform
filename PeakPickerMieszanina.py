@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pyplot as plt
 from scipy.optimize import minimize
 from sys import exit
 from RadonClass import *
@@ -9,26 +10,27 @@ iterations = int(input('How many iterations?\n'))
 import time
 start = time.time()
 
-# Import data 
-# Alanina1
-file = r"C:\Daniel\Programowanie\Radon_transform\sample_data\Osocze_wspolczynniki_temperaturowe\Alanina1.csv"
-# # Osocze Mieszanina
-# file = r"C:\Daniel\Programowanie\Radon_transform\sample_data\Osocze_wspolczynniki_temperaturowe\Mieszanina.csv"
+# Import data # Mieszanina
+file = r"C:\Daniel\Programowanie\Radon_transform\sample_data\Osocze_wspolczynniki_temperaturowe\Mieszanina.csv"
 
-
-dwmin, dwmax, ddw = 35, 50, .05 # Domain of rates of change
+dwmin, dwmax, ddw = 35, 55, .05 # Domain of rates of change
 Peaks = np.empty((0,4)) #array for peaks found
 
 R1 = Radon(file, dwmin, dwmax, ddw) # Instance of Radon class
 
-# Plot_first_and_last(R1)
-# R1.trim(3,4.4)
-# Plot_first_and_last(R1,1)
+Plot_first_and_last(R1,1)
 # R1.Plot_abs()
-R1.Plot_real()
+# R1.Plot_real()
+
+# R1.trim(3,3.15)
+R1.trim(3,4.2)
+
+Plot_first_and_last(R1,1)
 # Plot_FIDs(R1)
 # Plot_all_series_spectra(R1)
 # Plot_spectra_3D(R1)
+
+R1.Plot_real()
 
 # exit()
 
@@ -118,30 +120,30 @@ def dothething(R, Peaks):
 for i in range(iterations):
     R1, Peaks = dothething(R1, Peaks)
     
-# # Output file
-# with open("peaks.txt","a+") as output:
+# Output file
+with open("peaks.txt","a+") as output:
     
-#     from datetime import datetime
-#     now = datetime.now()
-#     dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
-#     output.write(dt_string + '\n')
+    from datetime import datetime
+    now = datetime.now()
+    dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
+    output.write(dt_string + '\n')
 
-#     output.write('\nSummary:\n')
-#     for i in range(len(Peaks)):
-#         output.write('\t'+'Peak {0}\n'.format(i+1)+
-#           'Shift:\n'+str(round(toppm(R1,int(np.real(Peaks[i][0]))),5))+' ppm'+'\n'+
-#           'Change:\n'+str(round(np.real(Peaks[i][1])*1000*abs(R1.b1-R1.b2)/R1.n,3))+' ppb/K'+'\n'+
-#           'Damping:\n'+str(round(np.real(Peaks[i][2]),4))+'\n'+
-#           'Amplitude:\n'+str(round(Peaks[i][3],4))+'\n')
-
-#     output.write('\n'+'It took ' + str(time.time()-start) + ' seconds.' + '\n')
-
-print('\nSummary:\n')
-for i in range(len(Peaks)):
-    print('\t'+'Peak {0}\n'.format(i+1)+
-          'Frequency:\n'+str(round(toppm(R1,int(np.real(Peaks[i][0]))),5))+' ppm'+'\n'+
-          'Speed:\n'+str(round(np.real(Peaks[i][1])*1000*abs(R1.b1-R1.b2)/R1.n,3))+' ppb/K'+'\n'+
+    output.write('\nSummary:\n')
+    for i in range(len(Peaks)):
+        output.write('\t'+'Peak {0}\n'.format(i+1)+
+          'Shift:\n'+str(round(toppm(R1,int(np.real(Peaks[i][0]))),5))+' ppm'+'\n'+
+          'Change:\n'+str(round(np.real(Peaks[i][1])*1000*abs(R1.b1-R1.b2)/R1.n,3))+' ppb/K'+'\n'+
           'Damping:\n'+str(round(np.real(Peaks[i][2]),4))+'\n'+
           'Amplitude:\n'+str(round(Peaks[i][3],4))+'\n')
 
-print('It took', time.time()-start, 'seconds.')
+    output.write('\n'+'It took ' + str(time.time()-start) + ' seconds.' + '\n')
+
+# print('\nSummary:\n')
+# for i in range(len(Peaks)):
+#     print('\t'+'Peak {0}\n'.format(i+1)+
+#           'Frequency:\n'+str(round(toppm(R1,int(np.real(Peaks[i][0]))),5))+' ppm'+'\n'+
+#           'Speed:\n'+str(round(np.real(Peaks[i][1])*1000*abs(R1.b1-R1.b2)/R1.n,3))+' ppb/K'+'\n'+
+#           'Damping:\n'+str(round(np.real(Peaks[i][2]),4))+'\n'+
+#           'Amplitude:\n'+str(round(Peaks[i][3],4))+'\n')
+
+# print('It took', time.time()-start, 'seconds.')

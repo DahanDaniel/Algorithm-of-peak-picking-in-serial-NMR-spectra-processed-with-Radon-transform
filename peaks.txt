@@ -1,0 +1,567 @@
+03/05/2021 11:42:30
+	Peak 1
+Frequency:
+240.0 ppm
+Speed:
+1.5 ppb/K
+Damping:
+2.1901
+Amplitude:
+11.9675
+	Peak 2
+Frequency:
+100.0 ppm
+Speed:
+1.8 ppb/K
+Damping:
+1.9978
+Amplitude:
+7.9955
+	Peak 3
+Frequency:
+110.0 ppm
+Speed:
+1.9 ppb/K
+Damping:
+2.4537
+Amplitude:
+7.9121
+It took 24.73974061012268 seconds.03/05/2021 13:57:30
+
+Summary:
+	Peak 1
+Frequency:
+3.50867 ppm
+Speed:
+10.605 ppb/K
+Damping:
+87.9025
+Amplitude:
+-0.5009
+	Peak 2
+Frequency:
+3.49553 ppm
+Speed:
+10.592 ppb/K
+Damping:
+94.3062
+Amplitude:
+4.6552
+	Peak 3
+Frequency:
+3.42207 ppm
+Speed:
+10.69 ppb/K
+Damping:
+17.6313
+Amplitude:
+1.4174
+	Peak 4
+Frequency:
+3.43545 ppm
+Speed:
+10.678 ppb/K
+Damping:
+8.6437
+Amplitude:
+0.7624
+	Peak 5
+Frequency:
+4.13581 ppm
+Speed:
+9.984 ppb/K
+Damping:
+10.5814
+Amplitude:
+0.893
+	Peak 6
+Frequency:
+4.12584 ppm
+Speed:
+9.997 ppb/K
+Damping:
+7.5449
+Amplitude:
+0.7236
+	Peak 7
+Frequency:
+3.26419 ppm
+Speed:
+10.58 ppb/K
+Damping:
+23.537
+Amplitude:
+1.5487
+	Peak 8
+Frequency:
+3.22137 ppm
+Speed:
+10.167 ppb/K
+Damping:
+4.4664
+Amplitude:
+0.4473
+	Peak 9
+Frequency:
+3.73345 ppm
+Speed:
+10.69 ppb/K
+Damping:
+5.2067
+Amplitude:
+0.7663
+	Peak 10
+Frequency:
+3.74829 ppm
+Speed:
+10.519 ppb/K
+Damping:
+3.2764
+Amplitude:
+0.699
+	Peak 11
+Frequency:
+3.73369 ppm
+Speed:
+10.264 ppb/K
+Damping:
+-3.569
+Amplitude:
+-0.0
+	Peak 12
+Frequency:
+3.73831 ppm
+Speed:
+9.048 ppb/K
+Damping:
+2.1027
+Amplitude:
+0.5773
+	Peak 13
+Frequency:
+3.73102 ppm
+Speed:
+11.638 ppb/K
+Damping:
+1.2258
+Amplitude:
+-0.0613
+	Peak 14
+Frequency:
+3.50867 ppm
+Speed:
+10.605 ppb/K
+Damping:
+2.3289
+Amplitude:
+0.2001
+	Peak 15
+Frequency:
+3.57752 ppm
+Speed:
+10.41 ppb/K
+Damping:
+8.9506
+Amplitude:
+0.5455
+	Peak 16
+Frequency:
+3.85362 ppm
+Speed:
+10.519 ppb/K
+Damping:
+6.9593
+Amplitude:
+0.9899
+	Peak 17
+Frequency:
+3.91103 ppm
+Speed:
+10.361 ppb/K
+Damping:
+0.4191
+Amplitude:
+0.1106
+	Peak 18
+Frequency:
+3.90982 ppm
+Speed:
+10.215 ppb/K
+Damping:
+0.7585
+Amplitude:
+0.1778
+	Peak 19
+Frequency:
+3.90763 ppm
+Speed:
+10.58 ppb/K
+Damping:
+0.2128
+Amplitude:
+0.0661
+	Peak 20
+Frequency:
+3.79767 ppm
+Speed:
+10.301 ppb/K
+Damping:
+-2.7401
+Amplitude:
+-0.0
+	Peak 21
+Frequency:
+3.7967 ppm
+Speed:
+10.519 ppb/K
+Damping:
+5.4341
+Amplitude:
+0.5268
+	Peak 22
+Frequency:
+3.49553 ppm
+Speed:
+10.592 ppb/K
+Damping:
+1.9692
+Amplitude:
+0.0913
+	Peak 23
+Frequency:
+3.50964 ppm
+Speed:
+10.592 ppb/K
+Damping:
+1.4937
+Amplitude:
+0.0431
+	Peak 24
+Frequency:
+3.5077 ppm
+Speed:
+10.617 ppb/K
+Damping:
+1.0581
+Amplitude:
+0.0083
+	Peak 25
+Frequency:
+3.75705 ppm
+Speed:
+10.471 ppb/K
+Damping:
+4.4908
+Amplitude:
+0.3213
+	Peak 26
+Frequency:
+3.73102 ppm
+Speed:
+11.638 ppb/K
+Damping:
+-0.9916
+Amplitude:
+0.0
+	Peak 27
+Frequency:
+3.73053 ppm
+Speed:
+10.507 ppb/K
+Damping:
+0.4786
+Amplitude:
+0.0419
+	Peak 28
+Frequency:
+3.73223 ppm
+Speed:
+10.374 ppb/K
+Damping:
+-2.2539
+Amplitude:
+0.0
+	Peak 29
+Frequency:
+3.73953 ppm
+Speed:
+10.459 ppb/K
+Damping:
+4.1219
+Amplitude:
+0.1141
+	Peak 30
+Frequency:
+3.79037 ppm
+Speed:
+10.24 ppb/K
+Damping:
+8.9548
+Amplitude:
+0.4719
+	Peak 31
+Frequency:
+3.92709 ppm
+Speed:
+10.24 ppb/K
+Damping:
+4.073
+Amplitude:
+0.2175
+	Peak 32
+Frequency:
+3.92514 ppm
+Speed:
+10.58 ppb/K
+Damping:
+1.8128
+Amplitude:
+0.0092
+	Peak 33
+Frequency:
+3.92855 ppm
+Speed:
+10.361 ppb/K
+Damping:
+2.6881
+Amplitude:
+0.2114
+	Peak 34
+Frequency:
+3.91176 ppm
+Speed:
+10.349 ppb/K
+Damping:
+0.7109
+Amplitude:
+0.0402
+	Peak 35
+Frequency:
+3.9159 ppm
+Speed:
+9.814 ppb/K
+Damping:
+0.9674
+Amplitude:
+0.0853
+	Peak 36
+Frequency:
+3.90884 ppm
+Speed:
+10.228 ppb/K
+Damping:
+-2.2549
+Amplitude:
+-0.0
+	Peak 37
+Frequency:
+3.90909 ppm
+Speed:
+10.167 ppb/K
+Damping:
+2.4338
+Amplitude:
+0.1003
+	Peak 38
+Frequency:
+3.27659 ppm
+Speed:
+10.544 ppb/K
+Damping:
+2.5994
+Amplitude:
+0.132
+	Peak 39
+Frequency:
+3.25154 ppm
+Speed:
+10.568 ppb/K
+Damping:
+2.3511
+Amplitude:
+0.098
+	Peak 40
+Frequency:
+3.26443 ppm
+Speed:
+10.568 ppb/K
+Damping:
+1.2013
+Amplitude:
+0.0313
+	Peak 41
+Frequency:
+3.05571 ppm
+Speed:
+10.714 ppb/K
+Damping:
+4.7317
+Amplitude:
+0.1704
+	Peak 42
+Frequency:
+3.06228 ppm
+Speed:
+10.361 ppb/K
+Damping:
+6.7845
+Amplitude:
+0.2689
+	Peak 43
+Frequency:
+3.73126 ppm
+Speed:
+11.614 ppb/K
+Damping:
+0.6802
+Amplitude:
+0.0458
+	Peak 44
+Frequency:
+3.7315 ppm
+Speed:
+10.507 ppb/K
+Damping:
+-0.4919
+Amplitude:
+0.0003
+	Peak 45
+Frequency:
+3.72007 ppm
+Speed:
+10.641 ppb/K
+Damping:
+1.1477
+Amplitude:
+0.1082
+	Peak 46
+Frequency:
+3.78064 ppm
+Speed:
+10.24 ppb/K
+Damping:
+9.086
+Amplitude:
+0.3289
+	Peak 47
+Frequency:
+3.73175 ppm
+Speed:
+10.495 ppb/K
+Damping:
+-1.6993
+Amplitude:
+-0.0
+	Peak 48
+Frequency:
+3.73199 ppm
+Speed:
+10.434 ppb/K
+Damping:
+16.9049
+Amplitude:
+-0.0159
+	Peak 49
+Frequency:
+3.73004 ppm
+Speed:
+10.507 ppb/K
+Damping:
+7.7169
+Amplitude:
+0.1473
+
+It took 7875.353276252747 seconds.04/05/2021 11:01:00
+
+Summary:
+	Peak 1
+Frequency:
+240.0 ppm
+Speed:
+1.5 ppb/K
+Damping:
+2.1901
+Amplitude:
+11.9675
+	Peak 2
+Frequency:
+100.0 ppm
+Speed:
+1.8 ppb/K
+Damping:
+1.9978
+Amplitude:
+7.9955
+	Peak 3
+Frequency:
+110.0 ppm
+Speed:
+1.9 ppb/K
+Damping:
+2.4537
+Amplitude:
+7.9121
+
+It took 28.435174465179443 seconds.04/05/2021 11:19:49
+
+Summary:
+	Peak 1
+Frequency:
+3.50876 ppm
+Speed:
+10.606 ppb/K
+Damping:
+87.9025
+Amplitude:
+-0.5009
+	Peak 2
+Frequency:
+3.49562 ppm
+Speed:
+10.594 ppb/K
+Damping:
+94.3062
+Amplitude:
+4.6552
+	Peak 3
+Frequency:
+3.42214 ppm
+Speed:
+10.691 ppb/K
+Damping:
+17.6313
+Amplitude:
+1.4174
+	Peak 4
+Frequency:
+3.43552 ppm
+Speed:
+10.679 ppb/K
+Damping:
+8.6437
+Amplitude:
+0.7624
+
+It took 490.25135612487793 seconds.04/05/2021 22:04:38
+
+Summary:
+	Peak 1
+Shift:
+1.50134 ppm
+Change:
+10.378 ppb/K
+Damping:
+6.0997
+Amplitude:
+3.5632
+	Peak 2
+Shift:
+1.49088 ppm
+Change:
+10.39 ppb/K
+Damping:
+6.4383
+Amplitude:
+3.5341
+
+It took 143.14096331596375 seconds.
